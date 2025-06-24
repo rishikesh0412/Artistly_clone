@@ -2,6 +2,8 @@
 // If you want to add more steps or fields, this is the place to do it :)
 'use client';
 
+export const dynamic = 'force-dynamic'; 
+
 import { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';

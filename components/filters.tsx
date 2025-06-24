@@ -155,7 +155,7 @@ export function Filters({ filters, onFiltersChange, onReset }: FiltersProps) {
                   <SelectValue placeholder="Select location" />
                 </SelectTrigger>
                 <SelectContent>
-                  <SelectItem value="">All locations</SelectItem>
+                  <SelectItem value="all">All locations</SelectItem>
                   {locations.map((location) => (
                     <SelectItem key={location} value={location}>
                       {location}
@@ -176,7 +176,7 @@ export function Filters({ filters, onFiltersChange, onReset }: FiltersProps) {
                   <SelectValue placeholder="Select price range" />
                 </SelectTrigger>
                 <SelectContent>
-                  <SelectItem value="">All prices</SelectItem>
+                  <SelectItem value="all">All prices</SelectItem>
                   {priceRanges.map((range) => (
                     <SelectItem key={range} value={range}>
                       {range}
